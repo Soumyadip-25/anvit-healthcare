@@ -11,11 +11,13 @@ export const Footer: React.FC = () => {
           {/* Brand & Mission column */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <img
-                src="/logo.png"
-                alt="Anvit Logo"
-                className="w-10 h-10 object-contain brightness-0 invert"
-              />
+              <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#DCE4F2] shadow-sm bg-[#FAF6EC] flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="Anvit"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-[#FAF6EC]">
                 Anvit
               </span>

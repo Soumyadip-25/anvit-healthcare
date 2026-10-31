@@ -86,21 +86,19 @@ export const Navbar: React.FC = () => {
 
       {/* Main navigation bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Brand Logo & Wordmark */}
-          <Link to="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#2F4C86] rounded-lg p-1">
-            <img
-              src="/logo.png"
-              alt="Anvit Logo"
-              className="w-10 h-10 object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
-            />
-            <div className="flex flex-col">
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#14284B] leading-none">
-                Anvit
-              </span>
-              <span className="text-[10px] uppercase tracking-widest text-[#5B6475] font-semibold mt-1">
-                Healthcare
-              </span>
+        <div className="flex items-center justify-between h-20 sm:h-24">
+          {/* Brand Round Logo with One Single Blue Border (No text) */}
+          <Link
+            to="/"
+            className="flex items-center group focus:outline-none focus:ring-2 focus:ring-[#2F4C86] rounded-full p-0.5 transition-transform hover:scale-105"
+            aria-label="Anvit Home"
+          >
+            <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-[2.5px] border-[#14284B] shadow-md bg-[#FAF6EC] flex items-center justify-center">
+              <img
+                src="/logo.png"
+                alt="Anvit"
+                className="w-full h-full object-cover"
+              />
             </div>
           </Link>
 

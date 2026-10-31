@@ -97,8 +97,10 @@ export const ConsultationRoomPage: React.FC = () => {
       {/* Consultation Room Top Bar */}
       <header className="bg-[#14284B] border-b border-[#2F4C86]/50 px-4 sm:px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="Anvit" className="w-8 h-8 brightness-0 invert" />
+          <Link to="/" className="flex items-center gap-2.5">
+            <div className="w-10 h-10 rounded-full overflow-hidden border-[1.5px] border-[#DCE4F2] shadow-sm bg-[#FAF6EC] flex items-center justify-center">
+              <img src="/logo.png" alt="Anvit" className="w-full h-full object-cover" />
+            </div>
             <span className="font-serif font-bold text-lg text-white">Anvit Telehealth</span>
           </Link>
           <span className="hidden sm:inline-block text-[#2F4C86]">|</span>

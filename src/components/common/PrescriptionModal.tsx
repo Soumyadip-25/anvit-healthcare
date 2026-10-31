@@ -46,7 +46,9 @@ export const PrescriptionModal: React.FC<PrescriptionModalProps> = ({ prescripti
           {/* Header */}
           <div className="flex items-start justify-between border-b-2 border-[#14284B] pb-6">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Anvit Logo" className="w-12 h-12 object-contain" />
+              <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#14284B] shadow-sm bg-[#FAF6EC] flex items-center justify-center flex-shrink-0">
+                <img src="/logo.png" alt="Anvit Logo" className="w-full h-full object-cover" />
+              </div>
               <div>
                 <h2 className="font-serif text-2xl font-bold text-[#14284B] leading-none">
                   Anvit Health Clinic

@@ -359,7 +359,9 @@ export const LandingPage: React.FC = () => {
             {/* Visual Credibility Card */}
             <div className="bg-[#FFFDF7] rounded-3xl border border-[#E3DAC4] p-8 shadow-md">
               <div className="flex items-center gap-3 border-b border-[#E3DAC4] pb-6 mb-6">
-                <img src="/logo.png" alt="Anvit emblem" className="w-12 h-12 object-contain" />
+                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#14284B] shadow-sm bg-[#FAF6EC] flex items-center justify-center flex-shrink-0">
+                  <img src="/logo.png" alt="Anvit emblem" className="w-full h-full object-cover" />
+                </div>
                 <div>
                   <h3 className="font-serif text-lg font-bold text-[#14284B]">
                     Anvit Clinical Advisory Board

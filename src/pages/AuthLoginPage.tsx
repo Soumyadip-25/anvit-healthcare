@@ -50,10 +50,11 @@ export const AuthLoginPage: React.FC = () => {
     <div className="min-h-screen bg-[#FAF6EC] py-16 flex items-center justify-center px-4">
       <div className="bg-[#FFFDF7] w-full max-w-md rounded-3xl border border-[#E3DAC4] shadow-xl p-8 sm:p-10 space-y-6 animate-fade-in">
         {/* Brand header */}
-        <div className="text-center space-y-2">
-          <Link to="/" className="inline-flex items-center gap-2.5">
-            <img src="/logo.png" alt="Anvit Logo" className="w-10 h-10 object-contain" />
-            <span className="font-serif text-2xl font-bold text-[#14284B]">Anvit</span>
+        <div className="text-center space-y-3">
+          <Link to="/" className="inline-flex items-center justify-center group" aria-label="Anvit Home">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-[2.5px] border-[#14284B] shadow-md bg-[#FAF6EC] flex items-center justify-center group-hover:scale-105 transition-transform">
+              <img src="/logo.png" alt="Anvit Logo" className="w-full h-full object-cover" />
+            </div>
           </Link>
           <h2 className="font-serif text-2xl font-bold text-[#14284B] pt-2">
             Sign In to Your Portal
